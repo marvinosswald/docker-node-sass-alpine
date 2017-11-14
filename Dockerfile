@@ -2,7 +2,7 @@ FROM node:8.9.1-alpine
 
 RUN apk update && \
     apk upgrade && \
-    apk add git g++ gcc libgcc libstdc++ linux-headers make python && \
+    apk add curl git g++ gcc libgcc libstdc++ linux-headers make python && \
     apk update && \
     npm install -g npm5
 
